@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgetpassword"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/backk"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="420dp"
+        android:background="@drawable/roundbox">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:src="@drawable/a"
+            app:civ_border_width="2dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The code is provided to you in email or mobile number!!"
+            android:textStyle="italic"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textSize="13sp"
+            android:textColor="#D02E2E"/>
+
+
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter the code you recieve"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_below="@id/text"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_roundbox"
+            />
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter your new password"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:layout_below="@id/text1"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_roundbox"
+            />
+
+        <EditText
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Re-enter your new password"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_roundbox"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget!"
+            android:backgroundTint="#E61818"
+            android:layout_below="@id/text3"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="110dp"
+            android:onClick="forget1"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
