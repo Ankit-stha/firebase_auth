@@ -24,7 +24,7 @@ public class Splash_screen extends AppCompatActivity {
     ImageView imageView =findViewById(R.id.img);
     TextView textView = findViewById(R.id.txt);
 
-    Animation animation1= AnimationUtils.loadAnimation(this, R.anim.animation);
+    Animation animation1= AnimationUtils.loadAnimation(this, R.anim.blink_animation);
     Animation animation2= AnimationUtils.loadAnimation(this,R.anim.animation);
     imageView.startAnimation(animation1);
     textView.startAnimation(animation2);

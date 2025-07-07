@@ -8,11 +8,8 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class forgetpassword extends AppCompatActivity {
+public class Forgetpassword extends AppCompatActivity {
     TextView textView;
 
     @Override
@@ -24,7 +21,7 @@ public class forgetpassword extends AppCompatActivity {
     }
 
     public void forget2(View view) {
-        Intent reset=new Intent(forgetpassword.this, forget1.class);
+        Intent reset=new Intent(Forgetpassword.this, forget1.class);
         startActivity(reset);
         Toast.makeText(this, "You can change password from here!!", Toast.LENGTH_LONG).show();
     }

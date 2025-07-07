@@ -20,7 +20,7 @@ public class facebook extends AppCompatActivity {
         setContentView(R.layout.activity_facebook);
     }
 
-    public void facebook(View view) {
+    public void facebook1(View view) {
         Intent facebook =new Intent(facebook.this, MainActivity.class);
         startActivity(facebook);
         Toast.makeText(this, "Login successfull", Toast.LENGTH_SHORT).show();
